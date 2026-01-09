@@ -44,20 +44,6 @@ Visualize forecasts and capacity risks using an interactive dashboard
 
 ✅ Production-ready Streamlit dashboard
 
-🗂️ Project Structure
-web-traffic-forecasting-dashboard/
-│
-├── src/
-│   ├── streamlit_app.py              # Streamlit dashboard
-│   ├── sarima_forecast_output.csv    # Final forecast output
-│
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── sarima_modeling.ipynb
-│   ├── lstm_comparison.ipynb
-│
-├── requirements.txt
-├── README.md
 
 📊 Dataset Description
 
@@ -119,6 +105,7 @@ Model	MAE	RMSE
 SARIMA (Baseline)	328	369
 Improved SARIMA	316	362
 LSTM	344	397
+
 ✅ Final Model Choice
 
 Improved SARIMA was selected due to:
@@ -159,9 +146,9 @@ Automatic identification of days exceeding capacity
 
 Actionable insights for infrastructure planning
 
-⚙️ Server Capacity Logic
+⚙️ Server Capacity Logic :
 
- If forecast_visits > server_capacity:
+1) If forecast_visits > server_capacity:
     Flag as high-risk day
 
 
